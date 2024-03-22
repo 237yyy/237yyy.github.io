@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ITMD 4/541-Lab 3</title>
+  <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <form id="tipCalculator">
+
+        <h1>ITMD 4/541 - Lab 3 - YIKAI FAN</h1>
+
+        <label for="billTotal">Bill total : </label>
+        <input type="text" id="billTotal" placeholder="Enter bill total" required>
+        
+        <label for="tipRange">Tip : </label>
+        <input type="range" id="tipRange" min="0" max="100" step="1">
+
+        <label for="tipPercentage">Tip percentage : </label>
+        <input type="text" id="tipPercentage" disabled>
+
+        <label for="tipAmount">Tip amount : </label>
+        <input type="text" id="tipAmount" disabled>
+
+        <label for="totalWithTip">Total bill with tip : </label>
+        <input type="text" id="totalWithTip" disabled>
+
+        <div id="error" class="error"></div>
+    </form>
+    <script src="Script/script.js"></script>
+</body>
+</html>
